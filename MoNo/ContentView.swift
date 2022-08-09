@@ -63,6 +63,7 @@ struct ContentView: View {
                         }
                         notes = ""
                     }
+                    hideKeyboard()
                 } label: {
                     Text("Добавить")
                         .font(.title3.bold())
@@ -97,6 +98,9 @@ struct ContentView: View {
                 ProgressView()
                     .progressViewStyle(CircularProgressViewStyle(tint: .blue))
             }
+        }
+        .onTapGesture {
+            hideKeyboard()
         }
         .onAppear {
             Task {
@@ -165,6 +169,13 @@ struct ContentView: View {
         } catch {
             print("removeEventInfo: something went wrong")
         }
+    }
+}
+
+extension View {
+    func hideKeyboard() {
+        let resign = #selector(UIResponder.resignFirstResponder)
+        UIApplication.shared.sendAction(resign, to: nil, from: nil, for: nil)
     }
 }
 
