@@ -9,11 +9,28 @@ import SwiftUI
 
 struct PreferencesView: View {
     @State var userName = "Пользователь"
+    @State var isActive = false
     
     var body: some View {
-        VStack {
-            Text("Привет, \(userName)!")
-            Text("День вашей зарплаты: \(salaryDay)")
+        NavigationView {
+            VStack {
+                Text("Привет, \(userName)!")
+                Text("День вашей зарплаты: \(salaryDay)")
+//                NavigationLink("", isActive: $isActive) {
+//                    EditView(userName: $userName)
+//                }
+            }
+            .navigationTitle("Профиль")
+            .fullScreenCover(isPresented: $isActive) {
+                EditView(userName: $userName)
+            }
+            .toolbar {
+                Button {
+                    isActive.toggle()
+                } label: {
+                    Text("Изменить")
+                }
+            }
         }
     }
 }

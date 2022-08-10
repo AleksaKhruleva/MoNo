@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5512797F28A3C27700D38C90 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5512797E28A3C27700D38C90 /* EditView.swift */; };
 		5592020628A14EC2008518C4 /* MoNoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5592020528A14EC2008518C4 /* MoNoApp.swift */; };
 		5592020828A14EC2008518C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5592020728A14EC2008518C4 /* ContentView.swift */; };
 		5592020A28A14EC3008518C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5592020928A14EC3008518C4 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5512797E28A3C27700D38C90 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		5592020228A14EC2008518C4 /* MoNo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoNo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5592020528A14EC2008518C4 /* MoNoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoNoApp.swift; sourceTree = "<group>"; };
 		5592020728A14EC2008518C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				5592021828A14F63008518C4 /* MainView.swift */,
 				5592020728A14EC2008518C4 /* ContentView.swift */,
 				5592021A28A14F7E008518C4 /* PreferencesView.swift */,
+				5512797E28A3C27700D38C90 /* EditView.swift */,
 				5592021628A14F32008518C4 /* DataController.swift */,
 				5592021328A14EF0008518C4 /* Model.xcdatamodeld */,
 				5592020928A14EC3008518C4 /* Assets.xcassets */,
@@ -153,6 +156,7 @@
 				5592021B28A14F7E008518C4 /* PreferencesView.swift in Sources */,
 				5592021728A14F32008518C4 /* DataController.swift in Sources */,
 				5592020628A14EC2008518C4 /* MoNoApp.swift in Sources */,
+				5512797F28A3C27700D38C90 /* EditView.swift in Sources */,
 				5592021928A14F63008518C4 /* MainView.swift in Sources */,
 				5592021528A14EF0008518C4 /* Model.xcdatamodeld in Sources */,
 			);
@@ -292,6 +296,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,6 +327,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
